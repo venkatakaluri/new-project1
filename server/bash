@@ -1,0 +1,6 @@
+mkdir syncspace
+cd syncspace
+npm create vite@latest client -- --template react
+mkdir server
+cd server && npm init -y && npm install express socket.io cors nodemon
+cd ../client && npm install socket.io-client lucide-react @monaco-editor/react
